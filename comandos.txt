@@ -1,0 +1,35 @@
+
+# backend
+ npm init -y
+ npm i express mongoose morgan multer dotenv cross-env cors
+ npm i fs-extra
+ node backend/index.js
+ npm i nodemon -D
+ nodemon backend/index.js
+ npx nodemon backend/index.js
+
+ # package-json
+ "scripts": {
+     "dev": "cross-env NODE_ENV=development nodemon backend/index.js --ignore frontend",
+     "start": "cross-env NODE_ENV=production node backend/index.js",
+     "postinstall": "npm run build",
+     "build": "cross-env NODE_ENV=production webpack",
+     "server:dev": "webpack-dev-server"
+
+npm run dev
+sudo service mongod start
+
+# frontend
+npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D
+npx webpack
+npm run build
+
+# Bootswatch e animate
+<link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+# Roda frontend
+npm run server:dev
+
+https://www.heroku.com/
+https://cloud.mongodb.com/v2/5cd5bbb1014b76b6f13fe659#clusters/edit
